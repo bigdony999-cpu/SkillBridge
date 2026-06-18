@@ -1,130 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-              <title>Listings | SkillBridge</title>
-                  <link rel="stylesheet" href="styles.css" />
-                    </head>
-                      <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Browse skill listings on SkillBridge - Find opportunities or showcase your expertise"/>
+  <title>Listings | SkillBridge - Find Skill Opportunities</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-                          <!-- NAVBAR -->
-                              <nav class="navbar">
-                                    <h1 class="logo"><a href="index.html">Skill<span>Bridge</span></a></h1>
-                                          <ul>
-                                                  <li><a href="index.html">Home</a></li>
-                                                          <li><a href="listings.html">Listings</a></li>
-                                                                  <li><a href="signup.html">Sign Up</a></li>
-                                                                        </ul>
-                                                                            </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <h1 class="logo"><a href="index.html">Skill<span>Bridge</span></a></h1>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listing.html" class="active">Listings</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="signup.html" class="signup-link">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                                                                                <!-- PAGE HEADER -->
-                                                                                    <section class="page-header">
-                                                                                          <h2>Browse <span>Skill Listings</span></h2>
-                                                                                                <p>Find the perfect skill or micro job opportunity</p>
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h2>Browse <span>Skill Listings</span></h2>
+  <p>Find the perfect skill or micro job opportunity</p>
 
-                                                                                                      <!-- SEARCH BAR -->
-                                                                                                            <div class="search-bar">
-                                                                                                                    <input type="text" placeholder="Search skills or jobs..." />
-                                                                                                                            <button class="btn">Search</button>
-                                                                                                                                  </div>
+  <!-- SEARCH BAR -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search skills, jobs, opportunities..." />
+    <button class="btn">Search</button>
+  </div>
 
-                                                                                                                                        <!-- FILTER TAGS -->
-                                                                                                                                              <div class="filters">
-                                                                                                                                                      <button class="filter-btn active">All</button>
-                                                                                                                                                              <button class="filter-btn">Tech</button>
-                                                                                                                                                                      <button class="filter-btn">Creative</button>
-                                                                                                                                                                              <button class="filter-btn">Marketing</button>
-                                                                                                                                                                                      <button class="filter-btn">Writing</button>
-                                                                                                                                                                                              <button class="filter-btn">Education</button>
-                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                        </section>
+  <!-- FILTER TAGS -->
+  <div class="filters">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Tech</button>
+    <button class="filter-btn">Creative</button>
+    <button class="filter-btn">Business</button>
+    <button class="filter-btn">Education</button>
+    <button class="filter-btn">Other</button>
+  </div>
+</section>
 
-                                                                                                                                                                                                            <!-- LISTINGS GRID -->
-                                                                                                                                                                                                                <section class="listings-page">
-                                                                                                                                                                                                                      <div class="listings-grid">
+<!-- LISTINGS CONTAINER -->
+<section class="listings-section">
+  <div class="listings-container">
+    <!-- Tech Category -->
+    <div class="listing-item">
+      <div class="listing-icon">💻</div>
+      <h3>Web Development</h3>
+      <p>Build modern, responsive websites with HTML, CSS, and JavaScript. Create professional web applications.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (245 reviews)</span>
+        <span class="price">$50-150/hr</span>
+      </div>
+      <span class="tag">Tech</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                                                                                                                                                                              <div class="listing-item">
-                                                                                                                                                                                                                                        <div class="listing-top">
-                                                                                                                                                                                                                                                    <span class="listing-icon">💻</span>
-                                                                                                                                                                                                                                                                <span class="tag">Tech</span>
-                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                    <h3>Web Development</h3>
-                                                                                                                                                                                                                                                                                              <p>Build modern websites and web apps for your business.</p>
-                                                                                                                                                                                                                                                                                                        <div class="listing-footer">
-                                                                                                                                                                                                                                                                                                                    <span class="price">From $20</span>
-                                                                                                                                                                                                                                                                                                                                <a href="#" class="btn small-btn">View</a>
-                                                                                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                                                                                  </div>
+    <div class="listing-item">
+      <div class="listing-icon">📱</div>
+      <h3>App Development</h3>
+      <p>Develop iOS and Android applications with modern frameworks. Create feature-rich mobile experiences.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (189 reviews)</span>
+        <span class="price">$60-200/hr</span>
+      </div>
+      <span class="tag">Tech</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                                                                                                                                                                                                                                                                                                          <div class="listing-item">
-                                                                                                                                                                                                                                                                                                                                                                    <div class="listing-top">
-                                                                                                                                                                                                                                                                                                                                                                                <span class="listing-icon">🎨</span>
-                                                                                                                                                                                                                                                                                                                                                                                            <span class="tag">Creative</span>
-                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                <h3>Graphic Design</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                          <p>Logos, banners and brand identity design services.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="listing-footer">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <span class="price">From $15</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a href="#" class="btn small-btn">View</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+    <div class="listing-item">
+      <div class="listing-icon">🐍</div>
+      <h3>Python Programming</h3>
+      <p>Expert Python development for data science, automation, and web applications. Clean and efficient code.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (312 reviews)</span>
+        <span class="price">$40-120/hr</span>
+      </div>
+      <span class="tag">Tech</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <div class="listing-item">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="listing-top">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span class="listing-icon">📱</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <span class="tag">Marketing</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <h3>Social Media</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>Grow and manage your social media presence globally.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="listing-footer">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span class="price">From $10</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a href="#" class="btn small-btn">View</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
+    <div class="listing-item">
+      <div class="listing-icon">☁️</div>
+      <h3>Cloud Architecture</h3>
+      <p>Design scalable cloud solutions on AWS, Azure, or Google Cloud. Infrastructure as code expertise.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.7 (167 reviews)</span>
+        <span class="price">$80-250/hr</span>
+      </div>
+      <span class="tag">Tech</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="listing-item">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="listing-top">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <span class="listing-icon">✍️</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span class="tag">Writing</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h3>Content Writing</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>Articles, blogs and professional copywriting services.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="listing-footer">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <span class="price">From $8</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <a href="#" class="btn small-btn">View</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+    <div class="listing-item">
+      <div class="listing-icon">🔒</div>
+      <h3>Cybersecurity Consultation</h3>
+      <p>Protect your business with expert security audits and implementation. Penetration testing and more.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (98 reviews)</span>
+        <span class="price">$100-300/hr</span>
+      </div>
+      <span class="tag">Tech</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="listing-item">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="listing-top">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span class="listing-icon">📚</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span class="tag">Education</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <h3>Online Tutoring</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>Learn any subject from qualified tutors worldwide.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="listing-footer">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <span class="price">From $12</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <a href="#" class="btn small-btn">View</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+    <!-- Creative Category -->
+    <div class="listing-item">
+      <div class="listing-icon">🎨</div>
+      <h3>Graphic Design</h3>
+      <p>Create stunning visual content including logos, branding, and marketing materials. Professional design expertise.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (423 reviews)</span>
+        <span class="price">$30-100/hr</span>
+      </div>
+      <span class="tag">Creative</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="listing-item">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="listing-top">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span class="listing-icon">🎵</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span class="tag">Creative</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h3>Music Production</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>Beats, mixing and mastering for your music projects.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="listing-footer">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span class="price">From $25</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a href="#" class="btn small-btn">View</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
-                                                                                                   </div>
+    <div class="listing-item">
+      <div class="listing-icon">🎬</div>
+      <h3>Video Production</h3>
+      <p>Create professional video content for marketing, education, and entertainment. Full production services.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (289 reviews)</span>
+        <span class="price">$75-250/hr</span>
+      </div>
+      <span class="tag">Creative</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                             </div>
-                                                                                                        </section>
+    <div class="listing-item">
+      <div class="listing-icon">🎵</div>
+      <h3>Music Production</h3>
+      <p>Produce, compose, and mix professional music. Audio engineering and mastering expertise available.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.7 (156 reviews)</span>
+        <span class="price">$50-200/hr</span>
+      </div>
+      <span class="tag">Creative</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
 
-                                                                  <script src="script.js"></script>
-                                                                 </body>
-                                                                     </html>
+    <div class="listing-item">
+      <div class="listing-icon">🖌️</div>
+      <h3>Illustration & Animation</h3>
+      <p>Beautiful custom illustrations and animations for websites, apps, and marketing. Hand-drawn or digital.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (201 reviews)</span>
+        <span class="price">$40-150/hr</span>
+      </div>
+      <span class="tag">Creative</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">✒️</div>
+      <h3>Copywriting & UX Writing</h3>
+      <p>Engaging copy that converts. Expert in web copy, email campaigns, and user experience writing.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (334 reviews)</span>
+        <span class="price">$35-120/hr</span>
+      </div>
+      <span class="tag">Creative</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <!-- Business Category -->
+    <div class="listing-item">
+      <div class="listing-icon">💼</div>
+      <h3>Business Consulting</h3>
+      <p>Expert business advice and strategic guidance for entrepreneurs. Growth, finance, and operations.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (278 reviews)</span>
+        <span class="price">$100-300/hr</span>
+      </div>
+      <span class="tag">Business</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">📊</div>
+      <h3>Data Analysis</h3>
+      <p>Transform raw data into actionable insights. Excel, SQL, Power BI, and Python analysis expertise.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (267 reviews)</span>
+        <span class="price">$50-150/hr</span>
+      </div>
+      <span class="tag">Business</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">📈</div>
+      <h3>Digital Marketing</h3>
+      <p>Boost your online presence. SEO, SEM, social media, and content marketing strategies.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.7 (412 reviews)</span>
+        <span class="price">$40-120/hr</span>
+      </div>
+      <span class="tag">Business</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">✍️</div>
+      <h3>Content Writing</h3>
+      <p>Write engaging and SEO-friendly content for blogs, websites, and social media. All niches covered.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (345 reviews)</span>
+        <span class="price">$25-80/hr</span>
+      </div>
+      <span class="tag">Business</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">📱</div>
+      <h3>Social Media Management</h3>
+      <p>Professional social media strategy and management. Content creation, posting, and community engagement.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (289 reviews)</span>
+        <span class="price">$30-100/hr</span>
+      </div>
+      <span class="tag">Business</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <!-- Education Category -->
+    <div class="listing-item">
+      <div class="listing-icon">📚</div>
+      <h3>Online Tutoring</h3>
+      <p>Expert tutoring in math, science, languages, and more. One-on-one personalized learning sessions.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (567 reviews)</span>
+        <span class="price">$20-60/hr</span>
+      </div>
+      <span class="tag">Education</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🎓</div>
+      <h3>Course Creation</h3>
+      <p>Create engaging online courses. Curriculum design, video creation, and platform setup expertise.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (156 reviews)</span>
+        <span class="price">$60-200/hr</span>
+      </div>
+      <span class="tag">Education</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🌐</div>
+      <h3>Language Teaching</h3>
+      <p>Learn English, Spanish, French, Chinese, and more. Native speakers with teaching experience.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (445 reviews)</span>
+        <span class="price">$15-50/hr</span>
+      </div>
+      <span class="tag">Education</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🔬</div>
+      <h3>STEM Education</h3>
+      <p>Science, technology, engineering, and mathematics expertise. Make complex concepts simple.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (223 reviews)</span>
+        <span class="price">$30-90/hr</span>
+      </div>
+      <span class="tag">Education</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">📖</div>
+      <h3>Writing & Editing</h3>
+      <p>Professional writing, editing, and proofreading services. Academic, technical, and creative writing.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (312 reviews)</span>
+        <span class="price">$30-100/hr</span>
+      </div>
+      <span class="tag">Education</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <!-- Other Category -->
+    <div class="listing-item">
+      <div class="listing-icon">💪</div>
+      <h3>Fitness Coaching</h3>
+      <p>Virtual fitness coaching and personal training. Personalized workout plans and nutrition guidance.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (234 reviews)</span>
+        <span class="price">$30-100/hr</span>
+      </div>
+      <span class="tag">Other</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🧘</div>
+      <h3>Meditation & Wellness</h3>
+      <p>Guided meditation, mindfulness coaching, and wellness consulting. Mental health and stress relief.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (189 reviews)</span>
+        <span class="price">$25-75/hr</span>
+      </div>
+      <span class="tag">Other</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🏠</div>
+      <h3>Interior Design Consultation</h3>
+      <p>Professional interior design consultation and mood boards. Transform your space beautifully.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.7 (178 reviews)</span>
+        <span class="price">$50-150/hr</span>
+      </div>
+      <span class="tag">Other</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🎤</div>
+      <h3>Public Speaking Training</h3>
+      <p>Overcome presentation anxiety and master public speaking. Professional communication coaching.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.8 (145 reviews)</span>
+        <span class="price">$40-120/hr</span>
+      </div>
+      <span class="tag">Other</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+
+    <div class="listing-item">
+      <div class="listing-icon">🤝</div>
+      <h3>Career Counseling</h3>
+      <p>Expert career guidance and job search coaching. Resume writing, interview prep, and strategy.</p>
+      <div class="listing-meta">
+        <span class="rating">⭐ 4.9 (267 reviews)</span>
+        <span class="price">$50-150/hr</span>
+      </div>
+      <span class="tag">Other</span>
+      <button class="btn btn-small">View Details</button>
+    </div>
+  </div>
+</section>
+
+<!-- PAGINATION -->
+<section class="pagination-section">
+  <div class="pagination">
+    <button class="page-btn" disabled>← Previous</button>
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <button class="page-btn">4</button>
+    <button class="page-btn">Next →</button>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta">
+  <h2>Ready to Post Your <span>Own Skill?</span></h2>
+  <p>Earn by sharing your expertise with thousands of clients worldwide.</p>
+  <a href="signup.html" class="btn btn-large">Post a Listing</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>SkillBridge</h3>
+      <p>Connecting global talent with unlimited opportunities.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listing.html">Listings</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Safety Tips</a></li>
+        <li><a href="#">Community Guidelines</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="copy">&copy; 2026 SkillBridge. All rights reserved. | Empowering global talent</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
